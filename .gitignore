@@ -26,7 +26,17 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# claude-flow
+.claude-flow/
+
+# PWA generated
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
 
 # vercel
 .vercel
