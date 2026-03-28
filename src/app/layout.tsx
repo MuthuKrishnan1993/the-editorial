@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { LayoutShell } from "@/components/layout/layout-shell";
+import { RegisterSW } from "@/components/pwa/register-sw";
 import "./globals.css";
 
 const inter = Inter({
@@ -49,6 +50,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased bg-[#fff4f3] text-[#4e211e] min-h-screen">
+        <RegisterSW />
         <div className="max-w-[430px] mx-auto relative">
           <LayoutShell>{children}</LayoutShell>
         </div>
